@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control horario y fichaje de trabajadores</title>
+  <meta name="description" content="La forma más sencilla de tener un control horario, aumentar la productividad y cumplir con la ley.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="logo-text">TimeTrack</span>
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="#">Inicio</a>
+          <a href="#features">Producto</a>
+          <a href="#precios">Precio</a>
+          <a href="#contacto">Contacto</a>
+          <a href="#contacto" class="btn btn-primary btn-sm main-nav-cta">Prueba de 15 días</a>
+        </nav>
+        <a href="#contacto" class="btn btn-primary btn-sm header-cta">Prueba de 15 días</a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <video autoplay muted loop playsinline preload="auto" class="hero-video" src="assets/world.mp4"></video>
+      <div class="hero-overlay"></div>
+      <div class="hero-blob hero-blob--one"></div>
+      <div class="hero-blob hero-blob--two"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">✦ Software de fichaje para equipos modernos</span>
+          <h1 class="hero-title">Control horario y fichaje de trabajadores</h1>
+          <p class="hero-text">
+            La forma más sencilla de tener un control horario, aumentar la
+            productividad y cumplir con la ley.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-lg"><span>Empieza gratis</span></button>
+            <button class="btn btn-ghost btn-lg"><span>Ver demo</span></button>
+          </div>
+          <div class="hero-stores">
+            <a href="#" class="store-badge"><img src="assets/googleplay .png" alt="Disponible en Google Play"></a>
+            <a href="#" class="store-badge"><img src="assets/appstore .png" alt="Disponible en App Store"></a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-media-glow"></div>
+
+          <div class="iphone">
+            <span class="iphone-island"></span>
+            <span class="iphone-btn iphone-btn--action"></span>
+            <span class="iphone-btn iphone-btn--vol-up"></span>
+            <span class="iphone-btn iphone-btn--vol-down"></span>
+            <span class="iphone-btn iphone-btn--power"></span>
+
+            <div class="iphone-screen">
+              <div class="screen-statusbar">
+                <span>9:41</span>
+                <span>●●●●  🔋</span>
+              </div>
+
+              <div class="screen-greeting">
+                <span>Hola, Ana 👋</span>
+                <strong>Turno de mañana</strong>
+              </div>
+
+              <div class="screen-card">
+                <span class="screen-card-label">Tiempo trabajado hoy</span>
+                <span class="screen-card-time">08:42:15</span>
+                <button class="screen-card-btn" type="button">Fichar salida</button>
+              </div>
+
+              <div class="screen-stats">
+                <div>
+                  <strong>38.5h</strong>
+                  <span>Esta semana</span>
+                </div>
+                <div>
+                  <strong>100%</strong>
+                  <span>Cumplimiento</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card float-card--top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/></svg>
+            <div>
+              <strong>100%</strong>
+              <span>Conforme a la ley</span>
+            </div>
+          </div>
+
+          <div class="float-card float-card--bottom">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <strong>2 seg</strong>
+              <span>Fichaje rápido</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / About -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section_header">
+          <span class="tag">Descripción</span>
+          <h1 class="section_title">Todo lo que necesitas para gestionar tu equipo</h1>
+          <p class="section_text">
+            Una plataforma pensada para simplificar el día a día de recursos humanos:
+            fichajes, turnos y horas extra, todo en un mismo lugar.
+          </p>
+        </div>
+        <div class="bento">
+          <div class="bento-card reveal">
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Control horario</h3>
+            <p>Registra entradas y salidas en segundos, desde el móvil o el ordenador, con validez legal.</p>
+          </div>
+          <div class="bento-card reveal">
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Gestión de turnos</h3>
+            <p>Planifica turnos y evita solapamientos con un calendario visual pensado para equipos.</p>
+          </div>
+          <div class="bento-card reveal">
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 7h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Bolsa de horas extra</h3>
+            <p>Controla horas extra automáticamente y mantén la transparencia con tu equipo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section_header">
+          <span class="tag">Beneficios</span>
+          <h1 class="section_title">¿Por qué elegir nuestra app de fichajes?</h1>
+          <p class="section_text">
+            Diseñada para ahorrarte tiempo, cumplir la normativa y dar visibilidad
+            total sobre tu equipo, sin complicaciones.
+          </p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Cumple con la ley</h4>
+            <p>Registro horario 100% conforme a la normativa vigente, sin complicaciones.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Ahorra tiempo</h4>
+            <p>Automatiza tareas repetitivas y dedica ese tiempo a lo que importa.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5M4 19h16M8 15v-4M12 15V8M16 15v-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Datos en tiempo real</h4>
+            <p>Informes y estadísticas actualizados al instante para tomar mejores decisiones.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2" stroke-linecap="round"/></svg>
+            </div>
+            <h4>Accesible desde cualquier lugar</h4>
+            <p>App disponible en iOS y Android para fichar desde donde estés.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M2 20c0-3 3-5 6-5s6 2 6 5M14.5 15.2c2.4.2 4.5 2 4.5 4.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Equipo alineado</h4>
+            <p>Visibilidad total de turnos, ausencias y horas para todo el equipo.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v12H8l-4 4V4z" stroke-linejoin="round"/></svg>
+            </div>
+            <h4>Soporte cercano</h4>
+            <p>Te acompañamos en todo el proceso con soporte humano y rápido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="statistics">
+      <div class="container statistics-inner">
+        <div class="stat_item">
+          <div class="stat_count">52%</div>
+          <div class="stat_text">Más procesos finalizados</div>
+        </div>
+        <div class="stat_item">
+          <div class="stat_count">85%</div>
+          <div class="stat_text">Mejora en la satisfacción de los clientes</div>
+        </div>
+        <div class="stat_item">
+          <div class="stat_count">83%</div>
+          <div class="stat_text">Mejora en la satisfacción de los empleados</div>
+        </div>
+        <div class="stat_item">
+          <div class="stat_count">68%</div>
+          <div class="stat_text">Simplifica el trabajo del área de administración</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="precios">
+      <div class="container">
+        <div class="section_header">
+          <span class="tag">Planes y precios</span>
+          <h1 class="section_title">Un plan para cada tamaño de equipo</h1>
+          <p class="section_text">
+            Empieza gratis y escala cuando lo necesites. Sin permanencia, cancela cuando quieras.
+          </p>
+        </div>
+
+        <div class="plans">
+          <div class="plan plan--light">
+            <h2 class="plan-title">Basic</h2>
+            <p class="plan-price">$4.99<span>/mes</span></p>
+            <ul class="plan-list">
+              <li>Hasta 5 empleados</li>
+              <li>Fichaje desde app móvil</li>
+              <li>Informes básicos</li>
+              <li>Soporte por email</li>
+              <li>Exportación a Excel</li>
+            </ul>
+            <div class="plan-box-btn">
+              <a href="#" class="btn btn-outline"><span>Empezar ahora</span></a>
+            </div>
+          </div>
+
+          <div class="plan plan--accent">
+            <span class="plan-badge">Más popular</span>
+            <h2 class="plan-title">Super</h2>
+            <p class="plan-price">$19.99<span>/mes</span></p>
+            <ul class="plan-list">
+              <li>Hasta 25 empleados</li>
+              <li>Gestión de turnos avanzada</li>
+              <li>Alertas de horas extra</li>
+              <li>Informes avanzados</li>
+              <li>Soporte prioritario</li>
+            </ul>
+            <div class="plan-box-btn">
+              <a href="#" class="btn btn-primary"><span>Empezar ahora</span></a>
+            </div>
+          </div>
+
+          <div class="plan plan--light">
+            <h2 class="plan-title">Enterprise</h2>
+            <p class="plan-price">$49.99<span>/mes</span></p>
+            <ul class="plan-list">
+              <li>Empleados ilimitados</li>
+              <li>Multi-sede</li>
+              <li>Integraciones API</li>
+              <li>Gestor de cuenta dedicado</li>
+              <li>SLA garantizado</li>
+            </ul>
+            <div class="plan-box-btn">
+              <a href="#" class="btn btn-outline"><span>Contactar</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan-services-opcion-box">
+          <img class="plan-services_icon" src="assets/whatsapp.png" alt="" />
+          <p class="fs-500">¿Necesitas algo diferente? No hay problema.</p>
+          <a href="#contacto" class="btn btn-outline btn-sm"><span>Ponte en contacto</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Devices banner -->
+    <section class="section-devices">
+      <div class="devices-overlay"></div>
+      <div class="container devices-content">
+        <h2>Disponible en todos tus dispositivos</h2>
+        <p>Fichaje, turnos y horas extra sincronizados en tiempo real, estés donde estés.</p>
+      </div>
+      <img class="devices_item" src="assets/iphone.png" alt="App en iPhone" />
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section_header">
+          <span class="tag">Contacto</span>
+          <h1 class="section_title">Solicita tu prueba gratuita</h1>
+          <p class="section_text">
+            Cuéntanos sobre tu equipo y te ayudamos a encontrar el plan que mejor se adapta a ti.
+          </p>
+        </div>
+
+        <div class="container-contact">
+          <div class="left-container">
+            <div class="left-inner-container">
+              <h2>Hablemos</h2>
+              <p>
+                Nuestro equipo te acompaña desde el primer día: configuración, migración de
+                datos y soporte durante toda la prueba gratuita de 15 días.
+              </p>
+              <br />
+              <p>Sin tarjeta de crédito. Sin permanencia. Cancela cuando quieras.</p>
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="form-container">
+              <div class="right-inner-container">
+                <form id="contact-form" action="#" novalidate>
+                  <h2 class="lg-view">Contacto</h2>
+                  <p>* Requerido</p>
+
+                  <input type="text" name="nombre" placeholder="Nombre *" required />
+                  <input type="email" name="email" placeholder="Email *" required />
+                  <input type="text" name="empresa" placeholder="Nombre de empresa *" required />
+                  <input type="tel" name="telefono" placeholder="Teléfono *" required />
+                  <textarea rows="4" name="mensaje" placeholder="Mensaje *" required></textarea>
+                  <p id="form-status" class="form-status" aria-live="polite"></p>
+                  <input type="submit" class="btn btn-primary btn-submit" value="Enviar" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="container-footer">
+          <div class="logo-widget">
+            <a href="#" class="logo logo--footer">
+              <span class="logo-mark">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="logo-text">TimeTrack</span>
+            </a>
+            <div class="text">
+              <p>Software de control horario y fichaje pensado para equipos que quieren
+              ganar tiempo, cumplir la ley y trabajar mejor.</p>
+            </div>
+            <div class="footer-social-box">
+              <ul class="footer-social">
+                <li><a href="#"><img src="assets/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="assets/gorjeo.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="assets/instagram.png" alt="Instagram"></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contact-widget">
+            <div class="footer-title">Contacto</div>
+            <div class="text">
+              <p>Av. de la Innovación 42, 18000 Granada</p>
+              <p>Granada: 910 123 456</p>
+              <p>hola@timetrack.app</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-politica-privacidad">
+          <div class="container-politica-privacidad-titulo">© 2026 · Política de privacidad</div>
+          <div class="lorem1">Términos de uso</div>
+          <div class="lorem1">Cookies</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var items = document.querySelectorAll('.reveal');
+      if (!items.length) return;
+
+      if (!('IntersectionObserver' in window)) {
+        items.forEach(function (item) {
+          item.classList.add('in-view');
+        });
+        return;
+      }
+
+      var isSmallDevice = window.matchMedia('(max-width: 380px)').matches;
+
+      var observer = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: isSmallDevice ? 0.05 : 0.2,
+        rootMargin: isSmallDevice ? '0px 0px -10% 0px' : '0px 0px -60px 0px'
+      });
+
+      items.forEach(function (item) {
+        observer.observe(item);
+      });
+    })();
+
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
+      var nav = document.getElementById('main-nav');
+      if (!toggle || !nav) return;
+
+      function closeMenu() {
+        nav.classList.remove('is-open');
+        toggle.classList.remove('is-active');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Abrir menú');
+      }
+
+      function openMenu() {
+        nav.classList.add('is-open');
+        toggle.classList.add('is-active');
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.setAttribute('aria-label', 'Cerrar menú');
+      }
+
+      toggle.addEventListener('click', function () {
+        if (nav.classList.contains('is-open')) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+          closeMenu();
+        }
+      });
+
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 768) {
+          closeMenu();
+        }
+      });
+    })();
+
+    (function () {
+      var form = document.getElementById('contact-form');
+      var status = document.getElementById('form-status');
+      if (!form || !status) return;
+
+      var hideTimer = null;
+
+      function clearStatus() {
+        status.textContent = '';
+        status.className = 'form-status';
+        if (hideTimer) {
+          clearTimeout(hideTimer);
+          hideTimer = null;
+        }
+      }
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (hideTimer) {
+          clearTimeout(hideTimer);
+          hideTimer = null;
+        }
+
+        var fields = form.querySelectorAll('[required]');
+        var allFilled = true;
+        fields.forEach(function (field) {
+          if (!field.value.trim()) {
+            allFilled = false;
+          }
+        });
+
+        if (!allFilled) {
+          status.textContent = 'Por favor, rellena todos los campos del formulario.';
+          status.className = 'form-status form-status--error';
+          return;
+        }
+
+        status.textContent = '¡Gracias! Hemos recibido tu mensaje.';
+        status.className = 'form-status form-status--success';
+        form.reset();
+
+        hideTimer = setTimeout(clearStatus, 4000);
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!form.contains(event.target)) {
+          clearStatus();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
